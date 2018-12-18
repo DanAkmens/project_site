@@ -19,32 +19,32 @@
         <!-- Navigation -->
         <nav class="navbar fixed-top navbar-expand-xl navbar-white bg-white">
             <div class="container-fluid">
-                <a href="index.html"><img class="logo" alt="Arlington Moore Logo" src="images/arlington-logo2.jpg"></a>
+                <a href="index.php"><img class="logo" alt="Arlington Moore Logo" src="images/arlington-logo2.jpg"></a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">home</a>
+                            <a class="nav-link" href="index.php">home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="services.html">divisions</a>
+                            <a class="nav-link" href="services.php">divisions</a>
                         </li>
                         <li class="nav-item current">
-                            <a class="nav-link" href="contact.html">contact</a>
+                            <a class="nav-link" href="contact.php">contact</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="jobs.html">vacancies</a>
+                            <a class="nav-link" href="jobs.php">vacancies</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="blog.html">blog</a>
+                            <a class="nav-link" href="blog.php">blog</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="advice.html">advice</a>
+                            <a class="nav-link" href="advice.php">advice</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link upload link" href="uploadcv.html">Upload CV <i class="fas fa-cloud-upload-alt"></i></a>
+                            <a class="nav-link upload link" href="uploadcv.php">Upload CV <i class="fas fa-cloud-upload-alt"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -89,17 +89,17 @@
     <h5 class="font-weight-bold">ACCURACY OF INFORMATION</h5>    
 
     <p>
-        Whilst Arlington Moore Search & Selection is committed to regularly updating and maintaining this website we cannot be held responsible for information that is deemed inaccurate, inadequate, unsuitable or out of date.  This website is for information purposes only and a user should seek either independent advice or contact Arlington Moore Search & Selection on <a href="contact.html" class="link">01482 638468</a>.</p>
+        Whilst Arlington Moore Search & Selection is committed to regularly updating and maintaining this website we cannot be held responsible for information that is deemed inaccurate, inadequate, unsuitable or out of date.  This website is for information purposes only and a user should seek either independent advice or contact Arlington Moore Search & Selection on <a href="contact.php" class="link">01482 638468</a>.</p>
     <p>
         We may from time to time make amendments, therefore please check the terms and conditions each time you use the site</p>
 
     <h5 class="font-weight-bold">REGISTRATION</h5>
     <p>
-        By registering your CV you are agreeing that we may from time to time send you job alerts by email or contact you by text or telephone with regards to vacancies.  If you do not wish to be contacted please complete the short form on our <a href="contact.html" class="link">contact page</a>.  Please be aware that by doing this it will limit the company's chances of contacting you with regards to a suitable vacancy.</p>
+        By registering your CV you are agreeing that we may from time to time send you job alerts by email or contact you by text or telephone with regards to vacancies.  If you do not wish to be contacted please complete the short form on our <a href="contact.php" class="link">contact page</a>.  Please be aware that by doing this it will limit the company's chances of contacting you with regards to a suitable vacancy.</p>
     <p>
         By registering with Arlington Moore you are agreeing for us to pass your CV to a third party employer that we are working with with after receiving verbal consent from you. </p> 
     <p>
-        Arlington Moore will retain all applications on a secure database and not on a web page.  If you do not wish for your details to be stored on our secure database please visit our  <a href="contact.html" class="link">contact page</a></p>
+        Arlington Moore will retain all applications on a secure database and not on a web page.  If you do not wish for your details to be stored on our secure database please visit our  <a href="contact.php" class="link">contact page</a></p>
     <p>
         Arlington Moore Search & Selection will make every attempt to assist applicants who register, however Arlington Moore are under no obligation to provide a service following an application.</p>
 
@@ -122,10 +122,10 @@
             <br>
             <p class="font-weight-bold blue pb-2 h4 text-center"> Additional Information</p>
             <div class="btn-group btn-group-vertical" role="group" aria-label="Information">
-              <a href="data-protection.html"class="btn bg-light mb-3 border p-3 text-dark">Data Protection &amp; Privacy</a>
-              <a href="equal-opportunities.html" class="btn bg-light mb-3 border p-3 text-dark">Equal Opportunities</a>
-              <a href="terms-conditions.html"class="btn bg-light mb-3 border p-3 text-dark">Terms &amp; Conditions</a>
-              <a href=""class="btn bg-light mb-3 border p-3 text-dark">Cookie Policy</a>
+              <a href="data-protection.php"class="btn bg-light mb-3 border p-3 text-dark">Data Protection &amp; Privacy</a>
+              <a href="equal-opportunities.php" class="btn bg-light mb-3 border p-3 text-dark">Equal Opportunities</a>
+              <a href="terms-conditions.php"class="btn bg-light mb-3 border p-3 text-dark">Terms &amp; Conditions</a>
+              <a href="cookies-policy.php"class="btn bg-light mb-3 border p-3 text-dark">Cookie Policy</a>
             </div>
         </div><!--  /column-2 -->
     </div> <!-- /row -->

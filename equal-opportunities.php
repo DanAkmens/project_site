@@ -56,7 +56,7 @@
     <div class="row">
         <div class="col-lg-9 py-5">
     <br>
-    <h3 class="blue">EQUAL OPPORTUNITIES</h3>
+    <h3 class="blue">EQUAL OPPORTUNITIES</h3> <br>
    
        <p> Arlington Moore Search & Selection are committed to equal opportunities in employment in which individuals are selected and treated on the basis of their relevant merits and abilities without regard to race, religion, colour, sex, age, national origin, disability or sexual orientation.</p>
 
@@ -88,10 +88,10 @@
             <br>
             <p class="font-weight-bold blue pb-2 h4 text-center"> Additional Information</p>
             <div class="btn-group btn-group-vertical" role="group" aria-label="Information">
-              <a href="terms-conditions.html"class="btn bg-light mb-3 border p-3 text-dark">Terms &amp; Conditions</a>
-              <a href="data-protection.html"class="btn bg-light mb-3 border p-3 text-dark">Data Protection &amp; Privacy</a>
-              <a href="equal-opportunities.html" class="btn bg-light mb-3 border p-3 text-dark">Equal Opportunities</a>
-              <a href=""class="btn bg-light mb-3 border p-3 text-dark">Cookie Policy</a>
+                <a href="data-protection.php"class="btn bg-light mb-3 border p-3 text-dark">Data Protection &amp; Privacy</a>
+                 <a href="equal-opportunities.php" class="btn bg-light mb-3 border p-3 text-dark">Equal Opportunities</a>
+                <a href="terms-conditions.php"class="btn bg-light mb-3 border p-3 text-dark">Terms &amp; Conditions</a>
+                <a href="cookies-policy.php"class="btn bg-light mb-3 border p-3 text-dark">Cookie Policy</a>
             </div>
         </div><!--  /column-2 -->
     </div> <!-- /row -->
