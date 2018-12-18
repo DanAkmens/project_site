@@ -151,8 +151,8 @@ mysqli_free_result($result);
           <div class='card h-100'>
             <a href='jobs.php?jobs=$job_id' target=''><h3 class='card-header link'> $job_title </h3></a>
             <div class='card-body'>             
-				      <p>$job_description</p>
-				      <div class='city d-flex'>
+				      $job_description
+				      <div class='city d-flex pt-4'>
 					      <p class='h4'>$job_city</p>
                 <p class='h4'>&pound;$job_salary_min</p>                 
 		  		    </div>
@@ -199,7 +199,7 @@ mysqli_free_result($result);
         
         <?php foreach($posts as $post) : ?>	
         <div class="col-lg-4 col-md-4">
-          <div class="card h-100">
+          <div class="card blog h-100">
             <a href="#" target=""><h3 class="card-header link"><?php echo $post['title']; ?></h3></a>
             <div class="card-body blogpic">             
 				      <img src="admin/img/<?php echo $post['post_image']; ?>" alt ="blog picture">

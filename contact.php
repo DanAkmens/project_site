@@ -79,7 +79,7 @@
                     </div>
                     <div class="form-check d-inline-flex my-2">
                         <input type="checkbox" class="form-check-input big-check" id="exampleCheck1">
-                        <label class="form-check-label ml-2 pt-1" for="exampleCheck1">Please acknowledge you have read our <a href="terms-conditions.html" class="link font-weight-normal">Terms and Conditions</a></label>
+                        <label class="form-check-label ml-2 pt-1" for="exampleCheck1">Please acknowledge you have read our <a href="terms-conditions.php" class="link font-weight-normal">Terms and Conditions</a></label>
                     </div>
                     <div class="d-flex center">
                         <button type="submit" class="btn orange btn-lg my-4">Submit Form</button>
