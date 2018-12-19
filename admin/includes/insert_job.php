@@ -19,6 +19,8 @@ require("db.php");
       margin: 0px;
     }
   </style>
+  <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="admin_style.css"/>
 </head>
 
 <body>

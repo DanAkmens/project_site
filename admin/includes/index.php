@@ -15,7 +15,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>Untitled Document</title>
-<link rel="stylesheet" href="style.css"/>
+<link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="admin_style.css"/>
 </head>
 
 <body>
