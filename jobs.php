@@ -70,12 +70,14 @@
     </div>
 
   <!--  -------Search-------- -->                          
-    <div class=" container my-4 search search-jobs"> 
-      <div class="input-group">
-        <input id="Job-search-form" type="text" class="form-control bg-white" maxlength="256" placeholder="job title" aria-label="job title" aria-describedby="basic-addon">
-        <input type="text" class="form-control bg-white" placeholder="location" aria-label="location" aria-describedby="basic-addon">
-       <button class="btn orange" type="button"><i class="fa fa-search"></i></button>          
-      </div>         
+    <div> 
+        <form action="search.php" method="POST" class="container my-4 search p-4 search-jobs"> 
+                <div class="input-group">
+                  <input name="job_title" id="job_title" type="text" class="form-control bg-white"  maxlength="256" placeholder="job title" aria-label="job title" aria-describedby="basic-addon">
+                  <input name="location" id="location" type="text" class="form-control bg-white" placeholder="location" aria-label="location" aria-describedby="basic-addon">         
+                  <button name="submit" class="btn orange" type="submit"><i class="fa fa-search"></i></button>
+                </div>
+              </form> 
     </div> 
 
  <!-- Vacancies Section -->

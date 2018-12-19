@@ -105,12 +105,12 @@ mysqli_free_result($result);
               <div class="row justify-content-end">             
                   <div class="text-white intro-p col-lg-6 py-5"><span>50 </span>years of combined experience in permanent recruitment and advertising campaigns throughout the UK specializing in Manufacturing, Engineering, Supply Chain, Logistics, IT, HR, Sales, Marketing, General Office and Retail</div>
               </div>             
-              <div class="search">
-              <form action="search.php" method="post"> 
+              <div>
+              <form action="search.php" method="POST"  class="search p-4 mt-4"> 
                 <div class="input-group">
                   <input name="job_title" id="job_title" type="text" class="form-control bg-white"  maxlength="256" placeholder="job title" aria-label="job title" aria-describedby="basic-addon">
                   <input name="location" id="location" type="text" class="form-control bg-white" placeholder="location" aria-label="location" aria-describedby="basic-addon">         
-                  <button name="submit" class="btn orange" type="submit"><i class="fa fa-search"></i></button>      
+                  <button name="submit" class="btn orange" type="submit"><i class="fa fa-search"></i></button>
                 </div>
               </form>         
               </div> 
@@ -158,7 +158,7 @@ mysqli_free_result($result);
 				      $job_description
 				      <div class='city d-flex pt-4'>
 					      <p class='h4'>$job_city</p>
-                <p class='h4'>&pound;$job_salary_min</p>                 
+                <p class='h4'>&pound;$job_salary_min - $job_salary_max</p>
 		  		    </div>
             </div>
             <div class='card-footer'>

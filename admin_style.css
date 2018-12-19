@@ -1,0 +1,35 @@
+
+body{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px; 
+	color:#333;	
+}
+.orange{
+  background-color:#FD8D00; 
+ }
+.card {
+	border:none;
+}
+a:hover{
+	text-decoration: none;
+}
+.btn-lg{
+	width: 220px;
+	font-size: 1.5em;
+	text-align: center;
+}
+.blue{
+	background-color: #222F5B;
+}
+.orange:hover,
+.btn-primary:not(:disabled):not(.disabled).orange:active{
+	background-color: #CA7100; 
+    color:white;    
+} 
+
+.btn-primary:active{
+  box-shadow: 0 5px 5px rgba(0,0,0,0); 
+   -webkit-transform: scale(0.95);
+  	transform: scale(0.95);
+  	outline: none;
+}
