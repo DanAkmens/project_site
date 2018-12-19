@@ -140,7 +140,7 @@ h3,
 .card-body{
 	display:flex;
 	flex-direction: column;
-	justify-content:flex-end;
+	justify-content:space-between;
 }
 
 .card a:first-child{
@@ -255,6 +255,9 @@ background: linear-gradient(rgba(14, 26, 64, 0.2), rgba(93, 93, 93, 0.2));, url(
 
 .blogpic img:hover{
 	transform: scale(1.05);
+}
+.blogpic{
+	justify-content: flex-end;
 }
 /***********FOOTER**************/
 footer{
@@ -557,9 +560,7 @@ background: none;
 		max-width: 100vw;
 		margin-bottom: 3rem;
 	}
-.input-group{
-	flex-direction: column;
-}
+
 .search input:first-child {
 	flex: 1 60px;
 }
@@ -610,13 +611,17 @@ form{
 }
 
 @media (max-width: 580px) {
+.container{
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+.search-container{
+	padding-right: 0;
+	padding-left: 0;
+}
 .logo{	
 	height:100px;
 	}
-.container{
-	padding-right:2rem;
-	padding-left:2rem;
-}
 .display-4{
 	font-size: 3rem;
 }

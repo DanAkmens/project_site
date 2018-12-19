@@ -56,7 +56,7 @@
     <div class="row">
         <div class="col-lg-9 py-5">
     <br>
-    <h3 class="blue">DATA PROTECTION AND PRIVACY</h3>
+    <h3 class="blue">DATA PROTECTION AND PRIVACY</h3><br>
     <p>
         Arlington Moore Search & Selection is committed to protecting your privacy whether through the use of our internet services or through any of our company job search process.  Arlington Moore follow the data protection act 1998 and make every effort to ensure that personal data remains secure and confidential at all times.</p>
     <p>
@@ -82,7 +82,7 @@
 
         <h3 class="blue">OPT OUT</h3>
         
-       <p> If you do not wish for your data to be stored by Arlington Moore or you do not wish to be contacted by telephone, text or email then please refer to our contact page and fill out the <a href="contact.html" class="link">short form</a></p>
+       <p> If you do not wish for your data to be stored by Arlington Moore or you do not wish to be contacted by telephone, text or email then please refer to our contact page and fill out the <a href="contact.php" class="link">short form</a></p>
 
         <p>Please note that if you do not wish to be emailed or telephoned then this will limit our chances of contacting you with possible job vacancies</p>
 
@@ -111,10 +111,10 @@
             <br>
             <p class="font-weight-bold blue pb-2 h4 text-center"> Additional Information</p>
             <div class="btn-group btn-group-vertical" role="group" aria-label="Information">
-             <a href="terms-conditions.html"class="btn bg-light mb-3 border p-3 text-dark">Terms &amp; Conditions</a>
-              <a href=""class="btn bg-light mb-3 border p-3 text-dark">Data Protection &amp; Privacy</a>
-              <a href="equal-opportunities.html" class="btn bg-light mb-3 border p-3 text-dark">Equal Opportunities</a>
-              <a href=""class="btn bg-light mb-3 border p-3 text-dark">Cookie Policy</a>
+                <a href=""class="btn bg-light mb-3 border p-3 text-dark">Data Protection &amp; Privacy</a>
+                <a href="equal-opportunities.php" class="btn bg-light mb-3 border p-3 text-dark">Equal Opportunities</a>
+                 <a href="terms-conditions.php"class="btn bg-light mb-3 border p-3 text-dark">Terms &amp; Conditions</a>
+              <a href="cookies-policy.php"class="btn bg-light mb-3 border p-3 text-dark">Cookie Policy</a>
             </div>
         </div><!--  /column-2 -->
     </div> <!-- /row -->

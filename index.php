@@ -98,17 +98,21 @@ mysqli_free_result($result);
               <!-- Slide Four -->
               <div class="carousel-item slide-4" style="background-image: url('images/woman4.jpg')" ></div>
           </div>
+                
+
   <!--  -------Search-------- -->
           <div class="container search-container">
               <div class="row justify-content-end">             
                   <div class="text-white intro-p col-lg-6 py-5"><span>50 </span>years of combined experience in permanent recruitment and advertising campaigns throughout the UK specializing in Manufacturing, Engineering, Supply Chain, Logistics, IT, HR, Sales, Marketing, General Office and Retail</div>
               </div>             
-              <div class="search" > 
+              <div class="search">
+              <form action="search.php" method="post"> 
                 <div class="input-group">
-                  <input type="text" class="form-control bg-white"  maxlength="256" placeholder="job title" aria-label="job title" aria-describedby="basic-addon">
-                  <input type="text" class="form-control bg-white" placeholder="location" aria-label="location" aria-describedby="basic-addon">         
-                  <button class="btn orange" type="button"><i class="fa fa-search"></i></button>           
-                </div>         
+                  <input name="job_title" id="job_title" type="text" class="form-control bg-white"  maxlength="256" placeholder="job title" aria-label="job title" aria-describedby="basic-addon">
+                  <input name="location" id="location" type="text" class="form-control bg-white" placeholder="location" aria-label="location" aria-describedby="basic-addon">         
+                  <button name="submit" class="btn orange" type="submit"><i class="fa fa-search"></i></button>      
+                </div>
+              </form>         
               </div> 
           </div>
       </div> 
@@ -151,8 +155,8 @@ mysqli_free_result($result);
           <div class='card h-100'>
             <a href='jobs.php?jobs=$job_id' target=''><h3 class='card-header link'> $job_title </h3></a>
             <div class='card-body'>             
-				      <p>$job_description</p>
-				      <div class='city d-flex'>
+				      $job_description
+				      <div class='city d-flex pt-4'>
 					      <p class='h4'>$job_city</p>
                 <p class='h4'>&pound;$job_salary_min</p>                 
 		  		    </div>
@@ -199,7 +203,7 @@ mysqli_free_result($result);
         
         <?php foreach($posts as $post) : ?>	
         <div class="col-lg-4 col-md-4">
-          <div class="card h-100">
+          <div class="card blog h-100">
             <a href="#" target=""><h3 class="card-header link"><?php echo $post['title']; ?></h3></a>
             <div class="card-body blogpic">             
 				      <img src="admin/img/<?php echo $post['post_image']; ?>" alt ="blog picture">

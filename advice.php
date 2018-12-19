@@ -20,10 +20,10 @@
 
   </head>
 
-  <body style="background-color: #ebebeb">
+  <body>
     <header> 
       <!-- Navigation -->
-      <nav class="navbar fixed-top navbar-expand-xl navbar-white bg-white">
+      <nav class="navbar fixed-top navbar-expand-xl navbar-white bg-white" id="navbar">
         <div class="container-fluid">
           <a href="index.php"><img class="logo" alt="Arlington Moore Logo" src="images/arlington-logo2.jpg"></a>
           <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">        	
@@ -60,192 +60,68 @@
 
 
 <!-- Page Content -->
+<div class="container pt-5 p-4">
 
-    <div container-fluid class="jobs-img" style="">
-        <h1 class="display-3 text-white">Job Search.</h1>
-    </div>
+ <h3 class="blue text-uppercase">Advice for Applicants</h3>
+<br>
 
-  <!--  -------Search-------- -->                          
-    <div class=" container my-4 search search-jobs"> 
-      <div class="input-group">
-        <input id="Job-search-form" type="text" class="form-control bg-white" maxlength="256" placeholder="job title" aria-label="job title" aria-describedby="basic-addon">
-        <input type="text" class="form-control bg-white" placeholder="location" aria-label="location" aria-describedby="basic-addon">         
-        <a href="#" target="_blank"><button class="btn orange" type="button"><i class="fa fa-search"></i></button></a>            
-      </div>         
-    </div> 
+<p>Searching for the right job whilst still concentrating on your already busy career can be difficult, which is why our Recruitment Agency is here to help you do just that.  We also want to ensure that you make the right move too.  With this in mind we don’t try and sell you a job, we want you to make an informed decision - a career move and not a leap into the unknown.  Here is some initial advice to get you on your way:</p>
 
- <!-- Vacancies Section -->
-  <div class="container jobs">
-      <div class="row">
-    <!--     Col-1 -->
-      	<div class="col-lg-4 col-md-5 aside d-flex flex-column">
-         <!--  FILTER -->
-            <div class="filter d-flex flex-column py-4 mb-4 text-white">
-              <div class="filter-body">
-              <div class="d-flex justify-content-between px-4 d-flex justify-content-between px-4 border-bottom">
-                <h1>Filter</h1>
-                <a href="" class="text-white"><h4><u>Reset</u></h4></a>
-              </div>
-       
-               <div class="d-flex justify-content-between px-4 d-flex justify-content-between px-4 border-bottom">
-                  <span>Location</span>
-                  <div class="dropdown">
-                        <div class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <span class="align-middle">Yorkshire </span> 
-                          <span class="plus align-middle">+</span>
-                        </div>
-                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-                          <a class="dropdown-item" href="#">Humberside</a>
-                          <a class="dropdown-item" href="#">Lincolnshire</a>
-                          <a class="dropdown-item" href="#">Greater London</a>
-                        </div>
-                  </div>
-                </div>
-                <div class="filter-item d-flex justify-content-between px-4 border-bottom">
-                  <span>Sector</span>
-                  <div class="dropdown">
-                        <div class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <span class="align-middle">Retail </span> 
-                          <span class="plus align-middle">+</span>
-                        </div>
-                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-                          <a class="dropdown-item" href="#">Finance</a>
-                          <a class="dropdown-item" href="#">IT</a>
-                          <a class="dropdown-item" href="#">Manufacturing</a>
-                        </div>
-                  </div>
-                </div>
-                <div class="filter-item d-flex justify-content-between px-4 border-bottom">
-                  <span>Industry</span>
-                  <div class="dropdown">
-                        <div class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <span class="align-middle">All </span> 
-                          <span class="plus align-middle">+</span>
-                        </div>
-                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-                          <a class="dropdown-item" href="#">1</a>
-                          <a class="dropdown-item" href="#">2</a>
-                          <a class="dropdown-item" href="#">3</a>
-                        </div>
-                  </div>
-                </div>
-                <div class="filter-item d-flex justify-content-between px-4 border-bottom">
-                  <span>Contract Type</span>
-                  <div class="dropdown">
-                        <div class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <span class="align-middle">All</span> 
-                          <span class="plus align-middle">+</span>
-                        </div>
-                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-                          <a class="dropdown-item" href="#">Permanent</a>
-                          <a class="dropdown-item" href="#">Full-time</a>
-                          <a class="dropdown-item" href="#">Part-time</a>
-                        </div>
-                  </div>
-                </div>
-                <div class="d-flex justify-content-between px-4 border-bottom">
-                  <span>Yearly Salary</span>
-                  <div class="dropdown">
-                        <div class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <span class="align-middle">All </span> 
-                          <span class="plus align-middle">+</span>
-                        </div>
-                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-                          <a class="dropdown-item" href="#">at least £10,000</a>
-                          <a class="dropdown-item" href="#">at least £15,000</a>
-                          <a class="dropdown-item" href="#">at least £20,000</a>
-                          <a class="dropdown-item" href="#">at least 30,000</a>
-                          <a class="dropdown-item" href="#">at least £40,000</a>
-                          <a class="dropdown-item" href="#">at least £50,000</a>
-                        </div>
-                  </div>
-                </div>
-              </div> <!-- /filter-body -->
-            
+<p class="font-weight-bold">Before you begin</p>
+<ul>
+<li>Make sure that you have a clear, well written CV and if you have more than one that they are consistent</li>
 
-              <div class="filter-footer pt-5 d-flex justify-content-center">
-               <a href="#" class="btn btn-lg text-uppercase px-5">filter jobs</a>
-              </div>
+<li>Upload your CV online onto various job boards</li>
 
-            </div><!-- /filter --> 
+<li> Keep searching the Arlington Moore website and contact us by email when you are interested in a role</li>
 
-           <!--  TWITTER     -->      
-            <div class="twitter py-4 mb-4 bg-white">
-              <div class="d-flex justify-content-between px-4 border-bottom pb-3">
-                <div>
-                  <span class="h3 pr-2">Tweets</span> 
-                  <span class="text-muted">by<a href="https://twitter.com/arlingtonmoore" target="_blank"><span class="pl-2 lightblue">@arlingtonmoore</span></a></span>
-                </div>
-                <span class="text-black-50"><i class="fas fa-info-circle"></i></span>
-              </div>
-            </div>
-        </div>                  
-       
-   <!--   col-2 -->
-        <div class="col-lg-8 col-md-7">
-        <!------ Job 1----- -->
-          <div class="card py-4 mb-4 blue">
-            <a href="#" target=""><h3 class="card-header lightblue border-bottom px-5">Interim Production Planner / Scheduler</h3></a>
-            <div class="card-body px-5">
-                <div class="specs">
-                  <div  class="pr-4"><span><strong class="bold-text-2 pr-2"><i class="fas fa-map-marker-alt"></i></strong></span> Hull</div>
-                  <div class="pr-4"><span><strong class="bold-text-3 pr-2"><i class="fas fa-clock"></i></strong></span> Permanent</div>
-                  <div class="pr-4"><span><strong class="bold-text-4 pr-2"><i class="fas fa-money-bill"></i></strong></span> £21000-25000</div>
-                </div>          
-				        <p>adipiscing elit, sed do  anim id est laborum adipiscing elit, sed do  anim id est laborumInterim laborum adipiscing elit, sed do  anim id est laborumInterim Production Planner / Scheduler. adipiscing elit, sed do  anim id est laborum</p>			
-            </div>
-            <div class="card-footer px-5">
-              <a href="#" class="btn btn-lg">Read More</a>
-            </div>
-          </div> 
+<li>Don’t keep applying for irrelevant jobs</li>
 
-        <!------ Job 2----- -->
-          <div class="card py-4 mb-4 blue">
-            <a href="#" target=""><h3 class="card-header lightblue border-bottom px-5">Interim Production Planner / Scheduler</h3></a>
-            <div class="card-body px-5">
-                <div class="specs">
-                  <div  class="pr-4"><span><strong class="bold-text-2 pr-2"><i class="fas fa-map-marker-alt"></i></strong></span> Hull</div>
-                  <div class="pr-4"><span><strong class="bold-text-3 pr-2"><i class="fas fa-clock"></i></strong></span> Permanent</div>
-                  <div class="pr-4"><span><strong class="bold-text-4 pr-2"><i class="fas fa-money-bill"></i></strong></span> £21000-25000</div>
-                </div>          
-                <p>adipiscing elit, sed do  anim id est laborum adipiscing elit, sed do  anim id est laborumInterim laborum adipiscing elit, sed do  anim id est laborumInterim Production Planner / Scheduler. adipiscing elit, sed do  anim id est laborum</p>      
-            </div>
-            <div class="card-footer px-5">
-              <a href="#" class="btn btn-lg">Read More</a>
-            </div>
-          </div> 
-          
-          <!------ Job 3----- -->
-          <div class="card py-4 mb-4 blue">
-            <a href="#" target=""><h3 class="card-header lightblue border-bottom px-5">Interim Production Planner / Scheduler</h3></a>
-            <div class="card-body px-5">
-                <div class="specs">
-                  <div  class="pr-4"><span><strong class="bold-text-2 pr-2"><i class="fas fa-map-marker-alt"></i></strong></span> Hull</div>
-                  <div class="pr-4"><span><strong class="bold-text-3 pr-2"><i class="fas fa-clock"></i></strong></span> Permanent</div>
-                  <div class="pr-4"><span><strong class="bold-text-4 pr-2"><i class="fas fa-money-bill"></i></strong></span> £21000-25000</div>
-                </div>          
-                <p>adipiscing elit, sed do  anim id est laborum adipiscing elit, sed do  anim id est laborumInterim laborum adipiscing elit, sed do  anim id est laborumInterim Production Planner / Scheduler. adipiscing elit, sed do  anim id est laborum</p>      
-            </div>
-            <div class="card-footer px-5">
-              <a href="#" class="btn btn-lg">Read More</a>
-            </div>
-          </div> 
+<li>Ensure you are professional; Public websites such as facebook, email addresses, your answerphone message</li>  
 
-          <!------ Show More----- -->             
-          <div class="show-more mb-4 bg-white text-center p-4">
-            <a href="" class="blue"><i class="fas fa-arrow-circle-down"></i>
-            <p class="h4 blue font-weight-bold pt-3">Show More</p></a>
-          </div>
+ </ul>
 
-          <!-- Upload CV -->
-          <div class="bg-white uploadcv-jobs mb-4 py-4 px-5 lightblue">
-            <span class="h4 font-weight-bold">Didn&#x27;t find the right job for you?</span>
-            <span class="h2"><a href="" class="lightblue"><span><strong>Upload CV <i class="fas fa-cloud-upload-alt"></i></strong></span></a></span>
-            
-          </div>
-        </div><!-- /column -->
-      </div><!-- /.row -->
-    </div> <!-- container jobs -->                    
+<p>CV WRITING</p>
+<ul>
+<li>Clear and concise; Profile at the start containing a short synopsis of what you do, Skills and achievements (Bullet point some selected skills and achievements), Qualifications – List your relevant qualifications (If you don’t have many put this at the end), career to date in chronological order (most recent first) put your employment history including dates, company name and job titles as well as a list of responsibilities.  Personal details (Make sure your contact details are on your CV)</li>
+
+<li>Profile - a brief description of you</li>
+
+ 
+
+<p>The interview</p>
+
+<li>Know where you are going and set off in good time</li>
+<li>Ensure that you are wearing a clean smart suit or business dress</li>
+<li>Shake hands with the interviewer as soon as you meet them</li>
+<li>Make small talk as you are entering the interview</li>
+<li>Answer questions concisely and to the point</li>
+<li>At the end ask the interviewer if they have any questions at all</li>
+
+<p>Examples of traditional Interview Questions</p>
+
+<li>What is a typical week / month in your current / previous role?</li>
+<li>Why did you leave your previous role?</li>
+<li>What are your strengths and areas you need to improve on?</li>
+<li>Why should we employ you?</li>
+<li>Why do you want this job?</li>
+<li>Why do you want to work for our company?</li>
+<li>What do you know about our company?</li>
+
+<p>You may also be asked situational or competency based questions where the interviewer will ask you to talk through a particular situation at work such as projects or situations with employees – ensure you have some to mind</p>
+
+<p>TIPS TO INCREASE YOUR CAREER CHANCES</p>
+
+<li>Keep learning – Learn whenever you can, relevant courses. Qualifications such as a degree may not make a difference to salary at the beginning of your career but the difference can be wide later on.</li>
+<li>Gain new experience whenever you can – Take on new responsibilities</li>
+<li>Network – Using your contacts and the internet</li>
+<li>Update your knowledge by reading articles etc</li>
+<li>Explore potential opportunities</li>
+<li>Don’t burn bridges</li>
+<li>Don't tell lies during the recruitment process!</li>
+<li>Show willing and flexibility</li>
+<li>Be careful what you place on public websites and social networking sites</li>
+                 
   </div>                           
 </body>
  
@@ -264,7 +140,8 @@
 
 			<p class="mt-3">&copy;Arlington Moore Ltd <script>document.write(new Date().getFullYear());</script></p> 
 	</footer>
-
+  
+     <script src="js/scripts.js"></script>
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
