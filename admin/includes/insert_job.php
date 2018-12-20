@@ -19,23 +19,22 @@ require("db.php");
       margin: 0px;
     }
   </style>
-  <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="admin_style.css"/>
+  <link href="../../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="admin_style.css"/>
 </head>
 
-<body>
+<body class="container">
   <form action="insert_job.php" method="POST" enctype="multipart/form-data">
 
-    <table width="795" align="center" bgcolor="#FFFFFF">
+    <table class="my-5 border">
 
-      <tr bgcolor="#FF6600">
-        <td colspan="6" align="center">
+      <tr class="blue text-white">
+        <td colspan="6" align="center" class="py-3">
           <h1>Insert New Vacancy:</h1>
         </td>
       </tr>
-
            <tr>
-        <td align="right" bgcolor="#FF6600"><strong>Post Sector Name:</strong></td>
+        <td align="right" class="blue text-white p-2"><strong> Sector:</strong></td>
         <td>
           <select name="sector_name">
             <option value="null">Select Industry</option>
@@ -62,27 +61,27 @@ require("db.php");
       </tr>
 
       <tr>
-        <td align="right" bgcolor="#FF6600"><strong>Title:</strong></td>
+        <td align="right" class="blue text-white p-2"><strong>Title:</strong></td>
         <td><input type="text" name="title" size="60" /></td>
       </tr>
 
       <tr>
-        <td align="right" bgcolor="#FF6600"><strong bgcolor="#FF6600">Description:</strong></td>
+        <td align="right" class="blue text-white p-2"><strong bgcolor="#FF6600">Description:</strong></td>
         <td><textarea name="description" rows="15" cols="40"></textarea></td>
       </tr>
 
       <tr>
-        <td align="right" bgcolor="#FF6600"><strong>Salary Min:</strong></td>
+        <td align="right" class="blue text-white p-2"><strong>Salary Min:</strong></td>
         <td><input type="number" name="salary_min" size="50" /></td>
       </tr>
 
       <tr>
-        <td align="right" bgcolor="#FF6600"><strong>Salary Max:</strong></td>
+        <td align="right" class="blue text-white p-2"><strong>Salary Max:</strong></td>
         <td><input type="number" name="salary_max" size="50" /></td>
       </tr>
 
       <tr>
-        <td align="right" bgcolor="#FF6600"><strong>Type of employment:</strong></td>
+        <td align="right" class="blue text-white p-2"><strong>Type of employment:</strong></td>
 
         <td> 
           <select name="type">
@@ -94,12 +93,12 @@ require("db.php");
       </tr>
 
       <tr>
-        <td align="right" bgcolor="#FF6600"><strong>City:</strong></td>
+        <td align="right" class="blue text-white p-2"><strong>City:</strong></td>
         <td><input type="text" name="city" size="60" /></td>
       </tr>
 
-      <tr bgcolor="#FF6600">
-        <td colspan="6" align="center"><input type="submit" name="submit" value="Publish Now" /></td>
+      <tr class="blue">
+        <td colspan="6" align="center" class="py-3"><button type="submit" name="submit" value="Publish Now" class="btn-lg btn-primary orange p-3">Publish Now</button></td>
       </tr>
 
     </table>

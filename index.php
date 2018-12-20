@@ -149,6 +149,8 @@ mysqli_free_result($result);
             $job_salary_max = $row_jobs['salary_max'];
             $job_city = $row_jobs['city'];
 
+            // conditional for salary
+            
             echo "
 
         <div class='col-lg-4 col-md-6'>

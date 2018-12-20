@@ -1,23 +1,6 @@
 <?php 
 require('admin/includes/db.php');
 
-// creates query
-$query = "SELECT * FROM posts 
-          ORDER BY rand() 
-          LIMIT 0,2";
-
-// Get result
-$result = mysqli_query($con, $query);
-
-// Fetch data
-$posts = mysqli_fetch_all($result, MYSQLI_ASSOC);
-
-// var_dump($posts); # to see our work in progress #
-
-// Free result
-mysqli_free_result($result);
-
-
 // close connection
 // mysqli_close($conn); # will stop passing data to featured jobs down the road!! 
 
@@ -122,7 +105,57 @@ mysqli_free_result($result);
 
                 if(isset($_POST['submit'])){
                     $search = $_POST['job_title'];
-                    print_r($search);
+                    
+                    $query = "SELECT * FROM jobs 
+                    WHERE title LIKE '%$search%'";
+                    $search_query = mysqli_query($con, $query);
+
+                    if(!$search_query) {
+                      die("Query Failed" . mysqli_error($con));
+                    }
+                    $number = mysqli_num_rows($search_query);
+                    if($number === 0) {
+                      echo "<h1>Can't find Result</h1>";
+                    } else {
+
+                      // $get_jobs = "SELECT * 
+                      // FROM jobs 
+                      // ORDER BY rand() 
+                      // LIMIT 0,5"; 
+ 
+                      // $run_jobs = mysqli_query($con, $get_jobs);				 
+         
+                      while($row_jobs = mysqli_fetch_array($search_query)) {
+ 
+                      $job_id = $row_jobs['id'];
+                      $job_title = $row_jobs['title'];
+                      $job_description = $row_jobs['description'];
+                      $job_salary_min = $row_jobs['salary_min'];
+                      $job_salary_max = $row_jobs['salary_max'];
+                      $job_city = $row_jobs['city'];
+ 
+                        echo "
+ 
+         <div class='col-lg-4 col-md-6'>
+           <div class='card h-100'>
+             <a href='jobs.php?jobs=$job_id' target=''><h3 class='card-header link'> $job_title </h3></a>
+             <div class='card-body'>             
+               $job_description
+               <div class='city d-flex pt-4'>
+                 <p class='h4'>$job_city</p>
+                 <p class='h4'>&pound;$job_salary_min</p>                 
+               </div>
+             </div>
+             <div class='card-footer'>
+               <a href='jobs.php?jobs=$job_id' class='btn btn-lg'>Read More</a>
+             </div>
+           </div>
+         </div>     
+ 
+           ";
+         }      
+
+                    }
                   }
 
                 ?>
@@ -138,95 +171,10 @@ mysqli_free_result($result);
         </div> 
 <!------ Job 1----- -->
 
-        <?php 
-        
-        $get_jobs = "SELECT * 
-                     FROM jobs 
-                     ORDER BY rand() 
-                     LIMIT 0,5"; 
-
-				$run_jobs = mysqli_query($con, $get_jobs);				
-
-        
-        while($row_jobs = mysqli_fetch_array($run_jobs)) {
-
-            $job_id = $row_jobs['id'];
-            $job_title = $row_jobs['title'];
-            $job_description = $row_jobs['description'];
-            $job_salary_min = $row_jobs['salary_min'];
-            $job_salary_max = $row_jobs['salary_max'];
-            $job_city = $row_jobs['city'];
-
-            echo "
-
-        <div class='col-lg-4 col-md-6'>
-          <div class='card h-100'>
-            <a href='jobs.php?jobs=$job_id' target=''><h3 class='card-header link'> $job_title </h3></a>
-            <div class='card-body'>             
-				      $job_description
-				      <div class='city d-flex pt-4'>
-					      <p class='h4'>$job_city</p>
-                <p class='h4'>&pound;$job_salary_min</p>                 
-		  		    </div>
-            </div>
-            <div class='card-footer'>
-              <a href='jobs.php?jobs=$job_id' class='btn btn-lg'>Read More</a>
-            </div>
-          </div>
-        </div>     
-
-          ";
-        }      
-    
-      ?>	  
-        
+      
        </div> <!-- /.row -->
-    </div> <!-- container vacancies  -->     
-     
-
-     
- <!-- Why Us Section      -->
-	<div class="container-fluid text-white why py-5">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-4">		
-					<h1 class='display-4'>Why Us?</h1>
-				</div>
-				<div class="col-lg-8">
-				    <p>We listen carefully to your requirements and what you are trying to achieve as well as your vision and philosophy. We always provide an honest service, taking personal ownership at every stage. This is why we have an impressive portfolio of clients who return to us again and again.</p>
-				</div>
-			</div>
-		</div>
-	</div>
-
- <!-- Blog Section -->
-  <div class="container">
-      <div class="row py-4">
-      	<div class="col-lg-4 col-md-4">
-          <div class="card h-100 px-3"> 
-				<h4 class="display-4 lightblue">Our Latest</h4>
-      			<h4 class="display-4 blue">Blog Posts</h4>
-          </div>
-        </div> 
-        
-        <?php foreach($posts as $post) : ?>	
-        <div class="col-lg-4 col-md-4">
-          <div class="card blog h-100">
-            <a href="#" target=""><h3 class="card-header link"><?php echo $post['title']; ?></h3></a>
-            <div class="card-body blogpic">             
-				      <img src="admin/img/<?php echo $post['post_image']; ?>" alt ="blog picture">
-            </div>
-            <div class="card-footer">
-              <a href="#" class="btn btn-lg">Read More</a>
-            </div>
-          </div>
-        </div>
-
-        <?php endforeach; ?>
-        
-        </div>      
-       </div> <!-- /.row -->
-    </div> <!-- /container blog  --> 
+    </div> <!-- container vacancies  -->          
+ 
 
     <!-- Footer -->
    

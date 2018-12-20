@@ -14,32 +14,32 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>Untitled Document</title>
+<title>Manage Vacancies</title>
+
 <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="admin_style.css"/>
+<link rel="stylesheet" href="../css/admin_style.css"/>
 </head>
 
 <body>
-
-<div class="wrapper">
+<div class="container">
 	
    <a href="index.php"> <div class="header"></div></a>
 
 	 <!-- Nav Bar on the Admin page -->
 	
-    <div class="left">
-    	<h3 style="padding:5px;">Manage Vacancies</h3>
-        
-        <a href="index.php?insert_job">Post A Job</a>
-         <a href="index.php?view_jobs">View all Jobs</a> 
-
-					<h3 style="padding:5px;">Manage Posts</h3>
-
-						<a href="index.php?insert_post">Insert New Post</a>
-             <a href="index.php?view_posts">View all Posts</a>
-
-          
-             <a href="logout.php">Admin Logout</a>
+    <div class="card">
+    	<h3 class="display-4 font-weight-bold py-5">Manage Vacancies</h3>
+        	<a href="index.php?insert_job" class="btn-lg p-3 btn-primary blue mb-4">Post new job</a>
+         	<a href="index.php?view_jobs" class="btn-lg btn-primary blue p-3 mb-4">View all jobs</a> 
+	</div>
+	<div class="card border-top">
+			<h3 class="display-4 font-weight-bold py-5">Manage Blog Posts</h3>
+			<a href="index.php?insert_post" class="btn-lg p-3 btn-primary blue mb-4">New blog post</a>
+             <a href="index.php?view_posts" class="btn-lg p-3 btn-primary blue mb-4">View all posts</a>
+	</div>
+     <div class="mt-4 card">
+             <a href="logout.php"class="btn-lg btn-primary orange p-3 mb-4">Logout</a>
+         </div>
     
     <!-- End of Nav Bar on the Admin page -->
     
